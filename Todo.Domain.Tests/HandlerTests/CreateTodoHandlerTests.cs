@@ -21,7 +21,8 @@ namespace Todo.Domain.Tests.HandlerTests
         [TestMethod]
         public void Dado_um_comando_invalido_deve_interromper_a_execucao()
         {
-            var result = (GenericCommandResult) this._handler.Handle(this._invalidCommand);
+            var result = (GenericCommandResult)this._handler.Handle(this._invalidCommand);
+
             Assert.AreEqual(result.Sucess, false);
 
         }

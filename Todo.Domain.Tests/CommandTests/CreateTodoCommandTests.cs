@@ -13,7 +13,8 @@ namespace Todo.Domain.Tests.CommandTests
 
         public CreateTodoCommandTests()
         {
-
+            _invalidCommand.Validate();
+            _validCommand.Validate();
         }
 
         [TestMethod]
