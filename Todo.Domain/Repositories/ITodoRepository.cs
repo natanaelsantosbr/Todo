@@ -13,5 +13,11 @@ namespace Todo.Domain.Repositories
 
         void Update(TodoItem todo);
         TodoItem GetById(Guid id, string user);
+
+        IEnumerable<TodoItem> GetAll(string user);
+        IEnumerable<TodoItem> GetAllDone(string user);
+        IEnumerable<TodoItem> GetAllUnDone(string user);
+        IEnumerable<TodoItem> GetByPeriod(string user, DateTime data, bool done);
+        
     }
 }

@@ -16,12 +16,14 @@ namespace Todo.Domain.Tests.QueriesTests
 
         public TodoQueryTests()
         {
-            _items = new List<TodoItem>();
-            _items.Add(new TodoItem("Tarefa 1", DateTime.Now, "natanael"));
-            _items.Add(new TodoItem("Tarefa 2", DateTime.Now, "natanael2"));
-            _items.Add(new TodoItem("Tarefa 3", DateTime.Now, "natanael"));
-            _items.Add(new TodoItem("Tarefa 4", DateTime.Now, "natanael2"));
-            _items.Add(new TodoItem("Tarefa 5", DateTime.Now, "natanael"));
+            _items = new List<TodoItem>
+            {
+                new TodoItem("Tarefa 1", DateTime.Now, "natanael"),
+                new TodoItem("Tarefa 2", DateTime.Now, "natanael2"),
+                new TodoItem("Tarefa 3", DateTime.Now, "natanael"),
+                new TodoItem("Tarefa 4", DateTime.Now, "natanael2"),
+                new TodoItem("Tarefa 5", DateTime.Now, "natanael")
+            };
 
         }
 
