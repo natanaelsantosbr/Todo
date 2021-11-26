@@ -15,7 +15,7 @@ namespace Todo.Domain.Api.Controllers
     {
         [Route("")]
         [HttpGet]
-        public IEnumerable<TodoItem> GetAll([FromBody] [FromServices] ITodoRepository repository)
+        public IEnumerable<TodoItem> GetAll([FromServices] ITodoRepository repository)
         {
             return repository.GetAll("natanaelsantosbr");
         }
