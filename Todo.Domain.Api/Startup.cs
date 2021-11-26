@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System.Linq;
 using Todo.Domain.Handlers;
 using Todo.Domain.Infra.Contexts;
 using Todo.Domain.Infra.Repositories;
