@@ -32,7 +32,9 @@ namespace Todo.Domain.Api
             services.AddSingleton //Prover uma Instance para a aplicação toda
             */
 
-            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
+            //          services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
+
             services.AddTransient<ITodoRepository, TodoRepository>();
             services.AddTransient<TodoHandler, TodoHandler>();
 
